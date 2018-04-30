@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "puppet": {
+	"nodeOS": "centos/7",
+	"bootstrap": "bootstrap.sh",
+	"bootstrap_args": "master",
+	":ip": "192.168.32.180",
+	":memory": 1024,
+	":hostname": "puppet.local"
+    },
+    "centos": {
+	"nodeOS": "centos/7",
+	"bootstrap": "bootstrap.sh",
+	"bootstrap_args": "client",
+	":ip": "192.168.32.181",
+	":memory": 1024,
+	":hostname": "centos.local"
+    },
+    "trusty": {
+	"nodeOS": "ubuntu/trusty64",
+	"bootstrap": "bootstrap.sh",
+	"bootstrap_args": "client",
+	":ip": "192.168.32.182",
+	":memory": 1024,
+	":hostname": "trusty.local"
+    },
+    "rhel7": {
+	"nodeOS": "generic/rhel7",
+	"bootstrap": "bootstrap.sh",
+	"bootstrap_args": "client",
+	":ip": "192.168.32.183",
+	":memory": 1024,
+	":hostname": "rhel7.local"
+    },
+    "xenial": {
+	"nodeOS": "ubuntu/xenial64",
+	"bootstrap": "bootstrap.sh",
+	"bootstrap_args": "client",
+	":ip": "192.168.32.184",
+	":memory": 1024,
+	":hostname": "xenial.local"
+    }
+  }
+}
